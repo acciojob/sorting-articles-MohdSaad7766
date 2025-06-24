@@ -14,7 +14,7 @@ const sortedBands = bands.sort((a, b) => {
   return bandA.localeCompare(bandB);
 });
 
-let ul = document.createElement('ul');
+let ul = document.getElementById("ul1")
 
 for (let value of sortedBands) {
   let li = document.createElement('li');
@@ -22,5 +22,4 @@ for (let value of sortedBands) {
   ul.appendChild(li);
 }
 
-document.appendChild(ul); 
 
