@@ -22,4 +22,5 @@ for (let value of sortedBands) {
   ul.appendChild(li);
 }
 
-document.body.appendChild(ul); 
+document.appendChild(ul); 
+
