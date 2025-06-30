@@ -14,12 +14,16 @@ const sortedBands = bands.sort((a, b) => {
   return bandA.localeCompare(bandB);
 });
 
-let ul = document.getElementById("ul1")
+let ul = document.createElement("ul");
+ul.id = "band";
+
 
 for (let value of sortedBands) {
   let li = document.createElement('li');
   li.innerText = value;
   ul.appendChild(li);
 }
+
+document.body.appendChild(ul);
 
 
