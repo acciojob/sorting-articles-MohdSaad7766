@@ -15,7 +15,7 @@ const sortedBands = bands.sort((a, b) => {
 });
 
 let ul = document.createElement("ul");
-ul.id = "band";
+ul.id = "bands";
 
 
 for (let value of sortedBands) {
